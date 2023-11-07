@@ -1,0 +1,15 @@
+runtime: python39
+instance_class: F2
+entrypoint: gunicorn -b :$PORT app:app --timeout 150
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 5
+
+env_variables:
+  # other env variables
+
+  LOCATION: "us-east1"  # set to your GCP region
+  PROJECT_ID: "coverlettergenerator-396114"
+  QUEUE_NAME: "cover-letter-queue"

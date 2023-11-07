@@ -1,0 +1,14 @@
+.env
+spacy_models
+.gcloudignore
+.idea/.gitignore
+.idea/coverLetterRewriter.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+__pycache__/app.cpython-311.pyc
+chromedriver.exe
+cloudrun-deploy-account.json
+CLRSecretCreds.json
+FB-service-account.json

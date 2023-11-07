@@ -1,0 +1,7 @@
+queue:
+- name: cover-letter-queue
+  rate: 5/s
+  target: default
+  retry_parameters:
+    task_retry_limit: 3
+    task_age_limit: 1h
